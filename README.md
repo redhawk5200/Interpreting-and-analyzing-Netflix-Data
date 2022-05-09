@@ -1,7 +1,7 @@
 <h1 align="center">Interpreting-and-analyzing-Netflix-Data</h1>
 
 <p align="center">
-  <iframe src="https://giphy.com/embed/JnvHE3lTHPr3WrSsrl" width="100%" height="100%" style="position:absolute" frameBorder="0" class="giphy-embed" allowFullScreen></iframe></div><p><a href="https://giphy.com/gifs/netflixlat-netflixseunoriginal-seunoriginal-netflixpride2019-JnvHE3lTHPr3WrSsrl">
+  <img src="https://media.giphy.com/media/UoRR2d1b8xs04A2bV8/giphy.gif"></h1>
 </p>
   
 <h3>1. Loading the raw data from the CSV file </h3>
