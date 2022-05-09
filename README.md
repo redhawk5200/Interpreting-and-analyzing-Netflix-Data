@@ -1,7 +1,7 @@
 <h1 align="center">Interpreting-and-analyzing-Netflix-Data</h1>
 
 <p align="center">
-  <img src="https://upload.wikimedia.org/wikipedia/commons/0/08/Netflix_2015_logo.svg" width="500" />
+  <iframe src="https://giphy.com/embed/JnvHE3lTHPr3WrSsrl" width="480" height="400" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/netflixlat-netflixseunoriginal-seunoriginal-netflixpride2019-JnvHE3lTHPr3WrSsrl">via GIPHY</a></p>
 </p>
 
 <h3>1. Loading the raw data from the CSV file </h3>
@@ -39,3 +39,13 @@ netflix_movies_col_subset=netflix_df_movies_only[['title','country','genre','rel
 # Print the first five rows of the new DataFrame
 print(netflix_movies_col_subset[0:5])
 ```
+|   | title |    country    |     genre     | release_year | duration |
+|:-:|:-----:|:-------------:|:-------------:|:------------:|:--------:|
+| 1 | 7:19  | Mexico        | Dramas        | 2016         | 93       |
+| 2 | 23:59 | Singapore     | Horror Movies | 2011         | 78       |
+| 3 | 9     | United States | Action        | 2009         | 80       |
+| 4 | 21    | United States | Dramas        | 2008         | 123      |
+| 6 | 122   | Egypt         | Horror Movies | 2019         | 95       |
+
+<h3>Creating a scatter plot of the data</h3>
+
