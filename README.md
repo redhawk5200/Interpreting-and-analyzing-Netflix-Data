@@ -50,3 +50,21 @@ print(netflix_movies_col_subset[0:5])
 <h3>Creating a scatter plot of the data.</h3>
 <p>Okay, now we're getting somewhere. We've read in the raw data, selected rows of movies, and have limited our DataFrame to our columns of interest. Let's try visualizing the data again to inspect the data over a longer range of time.</p>
 
+```python
+# Create a figure and increase the figure size
+fig = plt.figure(figsize=(12,8))
+
+# Create a scatter plot of duration versus year
+plt.scatter(netflix_movies_col_subset[["release_year"]],netflix_movies_col_subset[["duration"]])
+
+# Create a title
+plt.title('Movie Duration by Year of Release')
+
+# Show the plot
+plt.show()
+```
+
+
+<p align="center">
+  <img src="https://github.com/redhawk5200/Interpreting-and-analyzing-Netflix-Data/blob/main/scatterplot.PNG"/>
+</p>
