@@ -47,5 +47,6 @@ print(netflix_movies_col_subset[0:5])
 | 4 | 21    | United States | Dramas        | 2008         | 123      |
 | 6 | 122   | Egypt         | Horror Movies | 2019         | 95       |
 
-<h3>Creating a scatter plot of the data</h3>
+<h3>Creating a scatter plot of the data.</h3>
+<p>Okay, now we're getting somewhere. We've read in the raw data, selected rows of movies, and have limited our DataFrame to our columns of interest. Let's try visualizing the data again to inspect the data over a longer range of time.</p>
 
