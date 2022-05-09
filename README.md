@@ -1,5 +1,5 @@
 <h1 align="center">Interpreting-and-analyzing-Netflix-Data</h1>
 
 <p align="center">
-  <img src="https://img.shields.io/badge/Netflix-E50914?style=for-the-badge&logo=netflix&logoColor=white"/>
+  <img src="https://upload.wikimedia.org/wikipedia/commons/0/08/Netflix_2015_logo.svg" width="200" />
 </p>
