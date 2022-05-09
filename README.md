@@ -66,5 +66,6 @@ plt.show()
 
 
 <p align="center">
-  <img src="https://github.com/redhawk5200/Interpreting-and-analyzing-Netflix-Data/blob/main/scatterplot.PNG"/>
+  <img src="https://github.com/redhawk5200/Interpreting-and-analyzing-Netflix-Data/blob/main/scatterplot.PNG![scatterplot](https://user-images.githubusercontent.com/59371949/167449370-d99e2206-9cb3-441d-935a-a68ef81f05a4.PNG)
+"/>
 </p>
