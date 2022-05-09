@@ -23,3 +23,19 @@ print(netflix_df[0:5])
 | 0 | s1      | TV Show | 3%    | NaN               | João Miguel, Bianca Comparato, Michel Gomes, R... | Brazil        | August 14, 2020   | 2020         | 4        | In a future where the elite inhabit an island ... | International TV |
 | 1 | s2      | Movie   | 7:19  | Jorge Michel Grau | Demián Bichir, Héctor Bonilla, Oscar Serrano, ... | Mexico        | December 23, 2016 | 2016         | 93       | After a devastating earthquake hits Mexico Cit... | Dramas           |
 | 2 | s3      | Movie   | 23:59 | Gilbert Chan      | Tedd Chan, Stella Chung, Henley Hii, Lawrence ... | Singapore     | December 20, 2018 | 2011         | 78       | When an army recruit is found dead, his fellow... | Horror Movies    |
+
+<h3>2. Filtering for movies. </h3>
+<p>Okay, we have our data! Now we can dive in and start looking at movie lengths.
+
+  Or can we? Looking at the first five rows of our new DataFrame, we notice a column <code>type</code>. Scanning the column, it's clear there are also TV shows in the dataset! Moreover, the <code>duration</code> column we planned to use seems to represent different values depending on whether the row is a movie or a show (perhaps the number of minutes versus the number of seasons)?
+  
+</p>
+
+```python
+# Subset the DataFrame for type "Movie"
+netflix_df_movies_only = netflix_df[netflix_df.type=="Movie"]
+# Select only the columns of interest
+netflix_movies_col_subset=netflix_df_movies_only[['title','country','genre','release_year','duration']]
+# Print the first five rows of the new DataFrame
+print(netflix_movies_col_subset[0:5])
+```
