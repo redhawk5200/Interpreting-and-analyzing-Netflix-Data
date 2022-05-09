@@ -7,6 +7,7 @@
 <h3>1. Loading the raw data from the CSV file </h3>
 <br><br>
 -I will first import the CSV file which contains about 8000 rows and 11 columns of data. Got this data from [kaggle](https://www.kaggle.com/datasets/shivamb/netflix-shows)
+- :thinking: I’m currently open for: `An Intern` or a new `job opportunity`, this is [my Résumé](https://drive.google.com/file/d/1j4Khc23fEXEO1ydd5LGZpDej_RLeUFMl/view?usp=sharing).
 <br>
 
 ```python
