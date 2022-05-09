@@ -3,7 +3,7 @@
 <p align="center">
   <img src="https://giphy.com/gifs/netflixlat-netflixseunoriginal-seunoriginal-netflixpride2019-JnvHE3lTHPr3WrSsrl" width="35">
 </p>
-
+<div style="width:100%;height:0;padding-bottom:83%;position:relative;"><iframe src="https://giphy.com/embed/JnvHE3lTHPr3WrSsrl" width="100%" height="100%" style="position:absolute" frameBorder="0" class="giphy-embed" allowFullScreen></iframe></div><p><a href="https://giphy.com/gifs/netflixlat-netflixseunoriginal-seunoriginal-netflixpride2019-JnvHE3lTHPr3WrSsrl">via GIPHY</a></p>
 <h3>1. Loading the raw data from the CSV file </h3>
 <br><br>
 -I will first import the CSV file which contains about 8000 rows and 11 columns of data. Got this data from [kaggle](https://www.kaggle.com/datasets/shivamb/netflix-shows). Then print the first 5 rows so that you can inspect it.
