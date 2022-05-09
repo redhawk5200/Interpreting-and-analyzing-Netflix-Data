@@ -5,9 +5,9 @@
 </p>
 
 <h3>1. Loading the raw data from the CSV file </h3>
-
-<p>I will first import the CSV file which contains about 8000 rows and 11 columns of data. Got this data from [kaggle](https://www.kaggle.com/datasets/shivamb/netflix-shows)
-</p>
+<br>
+I will first import the CSV file which contains about 8000 rows and 11 columns of data. Got this data from [kaggle](https://www.kaggle.com/datasets/shivamb/netflix-shows)
+</br>
 
 ```python
 # Read in the CSV as a DataFrame
