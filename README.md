@@ -63,9 +63,5 @@ plt.title('Movie Duration by Year of Release')
 # Show the plot
 plt.show()
 ```
+![scatterplot](https://user-images.githubusercontent.com/59371949/167449480-635fbbf8-6b52-42e6-803b-3da3d627bd2a.PNG)
 
-
-<p align="center">
-  <img src="https://github.com/redhawk5200/Interpreting-and-analyzing-Netflix-Data/blob/main/scatterplot.PNG![scatterplot](https://user-images.githubusercontent.com/59371949/167449370-d99e2206-9cb3-441d-935a-a68ef81f05a4.PNG)
-"/>
-</p>
