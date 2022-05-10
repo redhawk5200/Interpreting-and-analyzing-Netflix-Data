@@ -1,3 +1,4 @@
+![coloredscatter](https://user-images.githubusercontent.com/59371949/167663233-2e73d273-92da-4cea-bd88-f613da9eae49.PNG)
 <h1 align="center">Interpreting-and-analyzing-Netflix-Data</h1>
 
 <p align="center">
@@ -67,7 +68,7 @@ plt.show()
 ```
 ![scatterplot](https://user-images.githubusercontent.com/59371949/167449480-635fbbf8-6b52-42e6-803b-3da3d627bd2a.PNG)
 
-<h3>4. Digging deeper </h3>![coloredscatter](https://user-images.githubusercontent.com/59371949/167663121-f2d238dc-104f-45c9-88a4-10d81087a419.PNG)
+<h3>4. Digging deeper </h3>
 
 <br>
 <p>Upon further inspection, something else is going on. Some of these films are under an hour long! Let's filter our DataFrame for movies with a duration under 60 minutes and look at the genres. This might give us some insight into what is dragging down the average.</p>
@@ -140,5 +141,4 @@ plt.title('Movie duration by year of release')
 # Show the plot
 plt.show()
 ```
-
-
+![coloredscatter](https://user-images.githubusercontent.com/59371949/167663121-f2d238dc-104f-45c9-88a4-10d81087a419.PNG)
