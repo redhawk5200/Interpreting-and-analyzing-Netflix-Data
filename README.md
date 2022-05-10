@@ -1,4 +1,4 @@
-![coloredscatter](https://user-images.githubusercontent.com/59371949/167663233-2e73d273-92da-4cea-bd88-f613da9eae49.PNG)
+
 <h1 align="center">Interpreting-and-analyzing-Netflix-Data</h1>
 
 <p align="center">
