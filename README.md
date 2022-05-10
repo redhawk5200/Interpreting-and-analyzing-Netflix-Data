@@ -67,7 +67,8 @@ plt.show()
 ```
 ![scatterplot](https://user-images.githubusercontent.com/59371949/167449480-635fbbf8-6b52-42e6-803b-3da3d627bd2a.PNG)
 
-<h3>4. Digging deeper </h3>
+<h3>4. Digging deeper </h3>![coloredscatter](https://user-images.githubusercontent.com/59371949/167663121-f2d238dc-104f-45c9-88a4-10d81087a419.PNG)
+
 <br>
 <p>Upon further inspection, something else is going on. Some of these films are under an hour long! Let's filter our DataFrame for movies with a duration under 60 minutes and look at the genres. This might give us some insight into what is dragging down the average.</p>
 
@@ -118,3 +119,26 @@ for lab, row in netflix_movies_col_subset.iterrows():
 print(colors[0:11])
 ```
 ['black', 'black', 'black', 'black', 'black', 'black', 'black', 'black', 'black', 'blue', 'black']
+
+<h3>Plotting with color!</h3>
+<br>
+<p>Lovely looping! We now have a colors list that we can pass to our scatter plot, which should allow us to visually inspect whether these genres might be responsible for the decline in the average duration of movies.</pr>
+
+```python
+# Set the figure style and initalize a new figure
+plt.style.use('fivethirtyeight')
+fig = plt.figure(figsize=(12,8))
+
+# Create a scatter plot of duration versus release_year
+plt.scatter(netflix_movies_col_subset[["release_year"]],netflix_movies_col_subset[["duration"]], c=colors)
+
+# Create a title and axis labels
+plt.xlabel('Release Year')
+plt.ylabel('Duration (min)')
+plt.title('Movie duration by year of release')
+
+# Show the plot
+plt.show()
+```
+
+
