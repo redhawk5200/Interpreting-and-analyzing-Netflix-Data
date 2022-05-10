@@ -5,7 +5,7 @@
 </p>
   
 <h3>1. Loading the raw data from the CSV file </h3>
-<br><br>
+<br>
 I will first import the CSV file which contains about 8000 rows and 11 columns of data. Got this data from [kaggle](https://www.kaggle.com/datasets/shivamb/netflix-shows). Then print the first 5 rows so that you can inspect it.
 </br>
 
@@ -25,6 +25,7 @@ print(netflix_df[0:5])
 | 2 | s3      | Movie   | 23:59 | Gilbert Chan      | Tedd Chan, Stella Chung, Henley Hii, Lawrence ... | Singapore     | December 20, 2018 | 2011         | 78       | When an army recruit is found dead, his fellow... | Horror Movies    |
 
 <h3>2. Filtering for movies. </h3>
+<br>
 <p>Okay, we have our data! Now we can dive in and start looking at movie lengths.
 
   Or can we? Looking at the first five rows of our new DataFrame, we notice a column <code>type</code>. Scanning the column, it's clear there are also TV shows in the dataset! Moreover, the <code>duration</code> column we planned to use seems to represent different values depending on whether the row is a movie or a show (perhaps the number of minutes versus the number of seasons)?
@@ -48,7 +49,7 @@ print(netflix_movies_col_subset[0:5])
 | 6 | 122   | Egypt         | Horror Movies | 2019         | 95       |
 
 <h3>Creating a scatter plot of the data.</h3>
-
+<br>
 <p>Okay, now we're getting somewhere. We've read in the raw data, selected rows of movies, and have limited our DataFrame to our columns of interest. Let's try visualizing the data again to inspect the data over a longer range of time.</p>
 
 ```python
@@ -67,7 +68,7 @@ plt.show()
 ![scatterplot](https://user-images.githubusercontent.com/59371949/167449480-635fbbf8-6b52-42e6-803b-3da3d627bd2a.PNG)
 
 <h3>4. Digging deeper </h3>
-<br><br>
+<br>
 <p>Upon further inspection, something else is going on. Some of these films are under an hour long! Let's filter our DataFrame for movies with a duration under 60 minutes and look at the genres. This might give us some insight into what is dragging down the average.</p>
 
 ```python
@@ -87,10 +88,12 @@ print(short_movies[0:20])
 | 101 | 3 Seconds Divorce                                 | Canada        | Documentaries | 2018         | 53       |
 | 146 | A 3 Minute Hug                                    | Mexico        | Documentaries | 2019         | 28       |
 
+<p>Could not print the whole data as it was a lot to print here.</p>
+
 <p>Interesting! It looks as though many of the films that are under 60 minutes fall into genres such as "Children", "Stand-Up", and "Documentaries". This is a logical result, as these types of films are probably often shorter than 90 minute Hollywood blockbuster</p>
 
 <h3>5. Marking non-feature films</h3>
-<br><br>
+<br>
 <p>We could eliminate these rows from our DataFrame and plot the values again. But another interesting way to explore the effect of these genres on our data would be to plot them, but mark them with a different color.
 
 In Python, there are many ways to do this, but one fun way might be to use a loop to generate a list of colors based on the contents of the genre column. Much as we did in Intermediate Python, we can then pass this list to our plotting function in a later step to color all non-typical genres in a different color!
