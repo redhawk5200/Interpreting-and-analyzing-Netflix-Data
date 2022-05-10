@@ -48,6 +48,7 @@ print(netflix_movies_col_subset[0:5])
 | 6 | 122   | Egypt         | Horror Movies | 2019         | 95       |
 
 <h3>Creating a scatter plot of the data.</h3>
+
 <p>Okay, now we're getting somewhere. We've read in the raw data, selected rows of movies, and have limited our DataFrame to our columns of interest. Let's try visualizing the data again to inspect the data over a longer range of time.</p>
 
 ```python
@@ -66,7 +67,17 @@ plt.show()
 ![scatterplot](https://user-images.githubusercontent.com/59371949/167449480-635fbbf8-6b52-42e6-803b-3da3d627bd2a.PNG)
 
 <h3>4. Digging deeper </h3>
+<br><br>
 <p>Upon further inspection, something else is going on. Some of these films are under an hour long! Let's filter our DataFrame for movies with a duration under 60 minutes and look at the genres. This might give us some insight into what is dragging down the average.</p>
+
+```python
+# Filter for durations shorter than 60 
+lessixty=netflix_movies_col_subset['duration']
+short_movies = netflix_movies_col_subset[lessixty<60]
+
+# Print the first 20 rows of short_movies
+print(short_movies[0:20])
+```
 
 |     |                       title                       |    country    |     genre     | release_year | duration |
 |:---:|:-------------------------------------------------:|:-------------:|:-------------:|:------------:|:--------:|
@@ -79,9 +90,28 @@ plt.show()
 <p>Interesting! It looks as though many of the films that are under 60 minutes fall into genres such as "Children", "Stand-Up", and "Documentaries". This is a logical result, as these types of films are probably often shorter than 90 minute Hollywood blockbuster</p>
 
 <h3>5. Marking non-feature films</h3>
+<br><br>
 <p>We could eliminate these rows from our DataFrame and plot the values again. But another interesting way to explore the effect of these genres on our data would be to plot them, but mark them with a different color.
 
 In Python, there are many ways to do this, but one fun way might be to use a loop to generate a list of colors based on the contents of the genre column. Much as we did in Intermediate Python, we can then pass this list to our plotting function in a later step to color all non-typical genres in a different color!
 </p>
 
+```python
+# Define an empty list
+colors = []
 
+# Iterate over rows of netflix_movies_col_subset
+for lab, row in netflix_movies_col_subset.iterrows():
+    if row['genre']=="Children" :
+        colors.append('red')
+    elif row['genre']=="Documentaries" :
+        colors.append('blue')
+    elif row['genre']=="Stand-Up" :
+        colors.append('green')
+    else:
+        colors.append('black')
+        
+# Inspect the first 10 values in your list        
+print(colors[0:11])
+```
+['black', 'black', 'black', 'black', 'black', 'black', 'black', 'black', 'black', 'blue', 'black']
