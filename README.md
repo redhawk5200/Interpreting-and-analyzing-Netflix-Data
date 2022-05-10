@@ -4,7 +4,9 @@
 <p align="center">
   <img src="https://media.giphy.com/media/UoRR2d1b8xs04A2bV8/giphy.gif"></h1>
 </p>
-  
+
+<h2>Hypothesis: Duration of some type of movies have declined in the recent years</h2>
+<br>
 <h3>1. Loading the raw data from the CSV file </h3>
 <br>
 I will first import the CSV file which contains about 8000 rows and 11 columns of data. Got this data from [kaggle](https://www.kaggle.com/datasets/shivamb/netflix-shows). Then print the first 5 rows so that you can inspect it.
@@ -142,3 +144,10 @@ plt.title('Movie duration by year of release')
 plt.show()
 ```
 ![coloredscatter](https://user-images.githubusercontent.com/59371949/167663121-f2d238dc-104f-45c9-88a4-10d81087a419.PNG)
+
+Well, as we suspected, non-typical genres such as children's movies and documentaries are all clustered around the bottom half of the plot. But we can't know for certain until we perform additional analyses.
+
+```python
+# Are we certain that movies are getting shorter?
+are_movies_getting_shorter = "No"
+```
