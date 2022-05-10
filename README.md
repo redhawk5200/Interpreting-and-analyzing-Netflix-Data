@@ -5,7 +5,7 @@
   <img src="https://media.giphy.com/media/UoRR2d1b8xs04A2bV8/giphy.gif"></h1>
 </p>
 
-<h2>Hypothesis: Duration of some type of movies have declined in the recent years</h2>
+<h2>Hypothesis: Duration of some type of movies have declined in the recent years.</h2>
 <br>
 <h3>1. Loading the raw data from the CSV file </h3>
 <br>
