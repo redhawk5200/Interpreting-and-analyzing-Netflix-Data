@@ -82,3 +82,9 @@ plt.show()
 <p>We could eliminate these rows from our DataFrame and plot the values again. But another interesting way to explore the effect of these genres on our data would be to plot them, but mark them with a different color.</p>
 
 
+       title        country          genre  release_year  duration
+    1   7:19         Mexico         Dramas          2016        93
+    2  23:59      Singapore  Horror Movies          2011        78
+    3      9  United States         Action          2009        80
+    4     21  United States         Dramas          2008       123
+    6    122          Egypt  Horror Movies          2019        95
